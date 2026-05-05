@@ -1,3 +1,20 @@
 /target
-**/*.rs.bk
-Cargo.lock
+    build/
+    **/*.rs.bk
+    Cargo.lock
+    ```
+
+4.  **Enregistre le fichier.**
+
+5.  **Finalise la fusion dans le terminal :**
+    Une fois le fichier enregistré, tu dois dire à Git que le conflit est résolu :
+    
+```bash
+    git add .gitignore
+    git commit -m "Fix: résolution du conflit sur .gitignore lors du merge de gestion_disque"
+    ```
+
+### Pourquoi cela arrive ?
+Comme tu es un futur ingénieur, c'est important de comprendre la logique : Git compare les historiques. Si deux branches "inventent" un fichier au même endroit sans se connaître, Git préfère te laisser la main plutôt que de supprimer une information potentiellement importante.
+
+Une fois que tu auras fait ce commit, ton `main` contiendra à la fois le code de `journal` et celui de `gestion_disque`. Tu pourras alors passer à la branche suivante (`index` ou `transaction`).
