@@ -1,0 +1,18 @@
+# Dossiers de build et fichiers temporaires (ce qui cause ton erreur actuelle)
+target/
+build/
+dist/
+__pycache__/
+*.py[cod]
+
+# Environnements virtuels
+venv/
+.venv/
+env/
+
+# Base de données locale (souvent utilisée avec SQLite/Django)
+*.sqlite3
+
+# Fichiers système
+.DS_Store
+Thumbs.db
